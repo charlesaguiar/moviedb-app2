@@ -1,0 +1,21 @@
+.container {
+  :global {
+    .sidebar {
+      @apply flex flex-col fixed p-8 inset-0 max-w-md bg-secondaryBackground z-50 max-h-full overflow-y-auto;
+      transform: translateX(-100%);
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .sidebar.active {
+      transform: translateX(0);
+    }
+  }
+}
+
+.header {
+  @apply flex justify-between w-full;
+}
+
+.menu-item {
+  @apply flex gap-6 items-center;
+}

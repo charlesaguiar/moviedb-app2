@@ -1,0 +1,22 @@
+.container {
+  @apply relative;
+}
+
+.carousel {
+  @apply flex gap-4 overflow-x-scroll w-full;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.arrow {
+  @apply absolute bg-white rounded-full p-2 z-10 cursor-pointer shadow-xl transition-all hover:scale-125;
+  bottom: 45%;
+  left: 1em;
+  max-width: fit-content;
+}
+
+.arrow-right {
+  left: calc(100% - 4em);
+}

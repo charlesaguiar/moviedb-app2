@@ -1,0 +1,35 @@
+.nav-global {
+  @apply inline-block sticky top-0 z-50 w-full px-5 py-4 shadow-lg bg-secondaryBackground lg:px-12;
+  :global {
+    .mobile-searchbar {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 1s;
+    }
+
+    .mobile-searchbar.active {
+      max-height: 300px;
+    }
+  }
+}
+
+.menu {
+  @apply hidden gap-8 md:flex;
+
+  & > li {
+    @apply text-secondary cursor-pointer text-xl font-semibold hover:text-gray-200;
+  }
+}
+
+.dropdown-menu {
+  @apply flex flex-col p-4 rounded-xl bg-white;
+}
+
+.dropdown-menu-item {
+  @apply flex gap-4 py-2 items-center cursor-pointer;
+}
+
+.dropdown-menu-item-logout {
+  margin-top: 1rem;
+  border-top: 1px solid #ccc;
+}

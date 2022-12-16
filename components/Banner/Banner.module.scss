@@ -1,0 +1,29 @@
+.container {
+  position: relative;
+  width: 100vw;
+
+  left: 50%;
+  right: 50%;
+  margin: 0 -50.5vw;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(33, 36, 45, 0.9) 0%,
+      rgba(33, 36, 45, 0.5) 50%,
+      rgba(33, 36, 45, 0) 100%
+    ),
+    var(--bgUrl);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  min-height: 300px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @screen md {
+    min-height: 400px;
+  }
+}

@@ -1,0 +1,14 @@
+.img-container {
+  @apply relative;
+  transition: all 0.25s ease-in-out;
+
+  &:hover {
+    // transform: scale(1.05);
+    // margin: 0.5rem 1rem;
+
+    .linearGradient {
+      @apply absolute w-full h-full z-10;
+      background: linear-gradient(to bottom, transparent 0%, #333 100%);
+    }
+  }
+}

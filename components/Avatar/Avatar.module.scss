@@ -1,0 +1,11 @@
+.container {
+  @apply flex items-center gap-4;
+}
+
+.avatar {
+  @apply flex items-center justify-center bg-primaryBackground text-secondary font-bold text-2xl rounded-full;
+}
+
+.username {
+  @apply text-2xl font-bold text-secondary;
+}

@@ -1,0 +1,13 @@
+.content {
+  @apply my-8;
+  color: white;
+  padding: 0 5rem;
+}
+
+.sub {
+  @apply text-2xl font-bold mb-8;
+}
+
+.title {
+  @apply text-5xl font-bold mb-8;
+}

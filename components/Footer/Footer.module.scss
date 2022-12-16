@@ -1,0 +1,19 @@
+.footer {
+  @apply flex flex-col justify-center items-center py-5 px-5 shadow-lg bg-secondaryBackground lg:flex-row lg:gap-10 lg:py-8;
+}
+
+.blocks {
+  @apply grid grid-cols-2 gap-16 mt-5 sm:flex sm:flex-row sm:mt-0;
+}
+
+.block {
+  @apply flex flex-col text-white;
+
+  span {
+    @apply font-semibold mb-4 text-xl;
+  }
+
+  a {
+    @apply cursor-pointer hover:text-gray-200;
+  }
+}

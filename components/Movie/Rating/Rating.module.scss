@@ -1,0 +1,33 @@
+.chart {
+  @apply relative flex items-center justify-center z-10;
+
+  background-image: conic-gradient(
+    var(--color) var(--percentage),
+    transparent var(--percentage)
+  );
+
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+
+  p {
+    @apply relative text-secondary z-10 text-xl;
+  }
+
+  p::after {
+    content: "%";
+    font-size: 0.8rem;
+  }
+}
+
+.chart::after {
+  @apply absolute bg-secondaryBackground;
+
+  content: "";
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  border-radius: inherit;
+}
